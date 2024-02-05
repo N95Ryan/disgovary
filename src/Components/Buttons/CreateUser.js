@@ -21,11 +21,11 @@ function CreateUserButton() {
             }
             const data = await response.json();
             setSuccessMessage('Utilisateur créé avec succès !');
+            setUsername(''); // réinitialise le champ du formulaire
         } catch (error) {
             setError(error.message);
         }
     };
-
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
             <div className="bg-white p-6 rounded-lg shadow-lg w-80 flex flex-col items-center">
