@@ -1,4 +1,4 @@
-import CreateUserForm from '../../Components/CreateUserForm';
+import CreateUserForm from '../../Components/Forms/CreateUserForm';
 import HomeButton from '../../Components/Buttons/HomeButton';
 
 function CreateUser() {

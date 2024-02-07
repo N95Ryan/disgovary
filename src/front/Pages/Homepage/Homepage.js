@@ -1,10 +1,10 @@
-import HomeButton from "../../Components/Buttons/HomeButton";
 import "./Homepage.css";
+import Navbar from "../../Components/Navbar/Navbar";
 
 function Homepage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-800">
-        <HomeButton />
+      <Navbar />
         <div className="flex flex-col items-center justify-center mb-8">
           <a href="https://go.dev/" target="_blank" rel="noreferrer">
             <img 
@@ -24,6 +24,10 @@ function Homepage() {
             <a href="/sandbox" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-bold py-4 px-4 rounded-3xl mt-8 shadow-xl animate-jump animate-once animate-normal">
               Sandbox
             </a>
+            <a href="/docs" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-bold py-4 px-4 rounded-3xl mt-8 shadow-xl animate-jump animate-once animate-normal">
+              Docs
+            </a>
+
           </div>
         </div>
       </div>

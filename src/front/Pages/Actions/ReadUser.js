@@ -1,11 +1,13 @@
-import HomeButton from "../../Components/Buttons/HomeButton";
+import ConstructionLoading from "../../Components/ConstructionLoading";
+import Navbar from "../../Components/Navbar/Navbar";
 function ReadUser() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
-            <HomeButton/>
-            <p className="text-4xl font-bold text-white">Read User</p>
-            <span className="text-4xl font-bold text-white my-2">🚧</span>
-            <p className="text-xl font-normal text-white animate-pulse animate-infinite">Page en construction, merci d'y revenir plus tard.</p>
+        <div className="flex items-center justify-center min-h-screen bg-gray-800">
+            <div className="flex flex-col items-center justify-center space-y-8">
+                <Navbar />
+                <p className="text-4xl font-bold text-white">Read User</p>
+                <ConstructionLoading />
+            </div>
         </div>
     )
 }
