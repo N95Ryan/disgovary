@@ -1,8 +1,10 @@
+import HomeButton from "../../Components/Buttons/HomeButton";
 import "./Homepage.css";
 
 function Homepage() {
   return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-800">
+    <div className="flex items-center justify-center min-h-screen bg-gray-800">
+        <HomeButton />
         <div className="flex flex-col items-center justify-center mb-8">
           <a href="https://go.dev/" target="_blank" rel="noreferrer">
             <img 
@@ -15,9 +17,14 @@ function Homepage() {
             <p className="text-4xl font-bold text-white mb-4 animate-fade-right animate-once animate-normal">Bienvenue sur Dis<span className="text-teal-400 font-extrabold italic">GO</span>vary.</p>
             <p className="text-xl text-white animate-fade-left animate-once animate-normal">Veuillez cliquer sur le bouton ci-dessous pour accéder à l'application.</p>
           </div>
-          <a href="/actionsdb" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-bold py-4 px-4 rounded-3xl mt-8 shadow-xl animate-jump animate-once animate-normal">
-            Commencer
-          </a>
+          <div className="flex flex-row items-center justify-center space-x-6">
+            <a href="/actionsdb" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-bold py-4 px-4 rounded-3xl mt-8 shadow-xl animate-jump animate-once animate-normal">
+              Commencer
+            </a>
+            <a href="/sandbox" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-bold py-4 px-4 rounded-3xl mt-8 shadow-xl animate-jump animate-once animate-normal">
+              La sandbox
+            </a>
+          </div>
         </div>
       </div>
   );

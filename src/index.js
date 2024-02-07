@@ -4,6 +4,7 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './front/Pages/Homepage/Homepage'
 import ActionsDB from './front/Pages/ActionsDB/ActionsDB';
+import Sandbox from './front/Pages/Sandbox/Sandbox';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +13,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/actionsdb" element={<ActionsDB />} />      
+        <Route path="/actionsdb" element={<ActionsDB />} /> 
+        <Route path="/sandbox" element={<Sandbox />} />     
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
