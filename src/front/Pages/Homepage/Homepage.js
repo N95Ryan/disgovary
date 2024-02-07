@@ -8,15 +8,15 @@ function Homepage() {
             <img 
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Go_Logo_Aqua.svg/1200px-Go_Logo_Aqua.svg.png"
               alt="Go Logo"
-              className="w-64 h-auto mb-4"
+              className="w-64 h-auto mb-4 animate-shake animate-infinite animate-duration-[4985ms]"
             />
           </a>
           <div className="flex flex-col items-center justify-center">
             <p className="text-4xl font-bold text-white mb-4">Bienvenue sur Dis<span className="text-teal-400 font-extrabold italic">GO</span>vary.</p>
             <p className="text-xl text-white">Veuillez cliquer sur le bouton ci-dessous pour accéder à l'application.</p>
           </div>
-          <a href="/actionsdb" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-normal py-4 px-4 rounded-3xl mt-8">
-            Accéder aux actions
+          <a href="/actionsdb" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-bold py-4 px-4 rounded-3xl mt-8 shadow-xl">
+            Commencer
           </a>
         </div>
       </div>
