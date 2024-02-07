@@ -1,5 +1,5 @@
-import ConstructionLoading from "../../Components/ConstructionLoading";
 import Navbar from "../../Components/Navbar/Navbar";
+import ConstructionLoading from "../../Components/ConstructionLoading";
 function ReadUser() {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-800">

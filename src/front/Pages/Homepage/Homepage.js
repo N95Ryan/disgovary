@@ -24,9 +24,6 @@ function Homepage() {
             <a href="/sandbox" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-bold py-4 px-4 rounded-3xl mt-8 shadow-xl animate-jump animate-once animate-normal">
               Sandbox
             </a>
-            <a href="/docs" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-bold py-4 px-4 rounded-3xl mt-8 shadow-xl animate-jump animate-once animate-normal">
-              Docs
-            </a>
 
           </div>
         </div>
