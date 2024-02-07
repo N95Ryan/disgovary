@@ -11,8 +11,10 @@ function Homepage() {
               className="w-64 h-auto mb-4"
             />
           </a>
-          <p className="text-4xl font-bold text-white mb-4">Bienvenue sur Dis<span className="text-teal-400">GO</span>vary.</p>
-          <p className="text-xl text-white">Veuillez cliquer sur le bouton ci-dessous pour accéder à l'application.</p>
+          <div className="flex flex-col items-center justify-center">
+            <p className="text-4xl font-bold text-white mb-4">Bienvenue sur Dis<span className="text-teal-400 font-extrabold italic">GO</span>vary.</p>
+            <p className="text-xl text-white">Veuillez cliquer sur le bouton ci-dessous pour accéder à l'application.</p>
+          </div>
           <a href="/actionsdb" className="bg-teal-600 hover:bg-teal-800 text-white text-2xl font-normal py-4 px-4 rounded-3xl mt-8">
             Accéder aux actions
           </a>

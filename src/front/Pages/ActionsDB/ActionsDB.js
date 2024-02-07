@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import CreateUserButton from '../Components/Buttons/CreateUser';
+import CreateUserButton from '../../Components/Buttons/CreateUser';
 
 function ActionsDB() {
     return (

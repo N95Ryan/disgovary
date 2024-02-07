@@ -10,7 +10,7 @@ import (
 const dataSourceName = "root:@tcp(localhost:3306)/user_management"
 
 // SetupRouter configures the API routes
-func SetupRouter(userService *user.UserService) *gin.Engine {
+func SetupRouter(userService *user.UserService) *gin.Engine { //SetupRouter configures the API routes
 	router := gin.Default()
 
 	// user-related API endpoints

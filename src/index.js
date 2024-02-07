@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Homepage from './Pages/Homepage/Homepage';
-import ActionsDB from './ActionsDB/ActionsDB';
+import Homepage from './front/Pages/Homepage/Homepage'
+import ActionsDB from './front/Pages/ActionsDB/ActionsDB';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
