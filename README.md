@@ -10,3 +10,7 @@ This is a litte application made for learning how the backend works, by using GO
 
 ## Run 
 To run the api type this command line : `go run cmd/main.go`
+
+## Stack 
+To build this app, I used React + Tailwind + GO
+
