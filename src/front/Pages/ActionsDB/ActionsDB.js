@@ -1,4 +1,3 @@
-import CreateUserButton from '../../Components/CreateUser';
 import HomeButton from '../../Components/Buttons/HomeButton';
 
 function ActionsDB() {
