@@ -1,8 +1,5 @@
 import Navbar from '../../Components/Navbar/Navbar';
 import CreateUserForm from '../../Components/Forms/CreateUserForm';
-import {
-        Link
-    } from "react-router-dom";
 
 function Sandbox() {
     return (
