@@ -4,6 +4,8 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './front/Pages/Homepage/Homepage'
 import Actions from './front/Pages/Actions/Actions';
+import Docs from './front/Pages/Docs/Docs';
+import About from './front/Pages/About/About';
 import Sandbox from './front/Pages/Sandbox/Sandbox';
 import CreateUser from './front/Pages/Actions/CreateUser';
 import ReadUser from './front/Pages/Actions/ReadUser';
@@ -18,12 +20,13 @@ root.render(
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/actions" element={<Actions />} /> 
-        <Route path="/sandbox" element={<Sandbox />} />   
+        <Route path="/docs" element={<Docs />} />
+        <Route path="/sandbox" element={<Sandbox />} />
+        <Route path="/about" element={<About />} />   
         <Route path="/createuser" element={<CreateUser />} />
         <Route path="readuser" element={<ReadUser />} />
         <Route path="updateuser" element={<UpdateUser />} />
         <Route path="deleteuser" element={<DeleteUser />} />
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
