@@ -6,11 +6,11 @@ import (
 	"example/web-service-gin/pkg/user"
 	"fmt"
 	"net/http"
-
-	_ "github.com/go-sql-driver/mysql"
+		_ "github.com/go-sql-driver/mysql"
+	"github.com/gin-gonic/gin"
 )
 
-const dataSourceName = "root:@tcp(localhost:3306)/user_management"
+const dataSourceName = "root:@tcp(localhost:3306)/go-test"
 
 func main() {
 	// database connection
@@ -31,7 +31,20 @@ func main() {
 	// user service
 	userService := user.NewUserService(db)
 
-	r := router.SetupRouter(userService)
+	r := gin.Default()
+	    // CORS middleware
+		r.Use(func(c gin.Context) {
+			c.Writer.Header().Set("Access-Control-Allow-Origin", "")
+			c.Writer.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+			c.Writer.Header().Set("Access-Control-Allow-Headers", "Origin, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
+			if c.Request.Method == "OPTIONS" {
+				c.AbortWithStatus(http.StatusOK)
+				return
+			}
+			c.Next()
+		})
+	
+	router.SetupRouter(userService, r)
 
 	// Start the HTTP server
 	port := 8080
