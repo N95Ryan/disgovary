@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Homepage from './front/Pages/Homepage/Homepage'
-import Actions from './front/Pages/Actions/Actions';
-import Docs from './front/Pages/Docs/Docs';
-import About from './front/Pages/About/About';
-import Sandbox from './front/Pages/Sandbox/Sandbox';
-import CreateUser from './front/Pages/Actions/CreateUser';
-import ReadUser from './front/Pages/Actions/ReadUser';
-import UpdateUser from './front/Pages/Actions/UpdateUser';
-import DeleteUser from './front/Pages/Actions/DeleteUser';
+import Homepage from './Pages/Homepage/Homepage';
+import Actions from './Pages/Actions/Actions';
+import Docs from './Pages/Docs/Docs';
+import About from './Pages/About/About';
+import Sandbox from './Pages/Sandbox/Sandbox';
+import CreateUser from './Pages/Actions/CreateUser';
+import ReadUser from './Pages/Actions/ReadUser';
+import UpdateUser from './Pages/Actions/UpdateUser';
+import DeleteUser from './Pages/Actions/DeleteUser';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
