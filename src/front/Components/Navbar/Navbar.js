@@ -31,7 +31,7 @@ function Navbar() {
                     </Link>
                 </div>           
             </Modal>            
-            <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:block hidden">
+            <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden">
                 <div className="flex justify-around text-lg font-bold lg:flex-grow">
                     <Link to="/" className="block lg:inline-block lg:mt-0 text-teal-800 hover:text-white transition duration-10000 ease-in-out">
                         Accueil
