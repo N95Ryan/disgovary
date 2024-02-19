@@ -6,7 +6,7 @@ function About() {
       <div className="flex flex-col items-center justify-center space-y-8">
         <Navbar />
         <p className="text-4xl font-bold text-white">À propos</p>
-        <p className="text-xl font-normal text-white text-center">
+        <p className="sm:text-xs md:text-xl font-normal text-white text-center">
           Le projet DisGOvary est un projet fullstack mis en place afin qu'un développeur novice comprenne mieux les environnements de travail front et back.
           <br />
           Étant nous même des développeurs front et back, nous avons décidé de mettre en commun nos atouts afin de se répartir le travail équitablement. 
